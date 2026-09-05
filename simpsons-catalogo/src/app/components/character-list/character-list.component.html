@@ -1,0 +1,43 @@
+<!-- src/app/components/character-list/character-list.component.html -->
+<div class="container">
+  <h1>Catálogo de Personajes - Los Simpson</h1>
+
+  @if (loading) {
+    <div class="state-indicator loading">Cargando personajes...</div>
+  }
+
+  @if (errorMessage) {
+    <div class="state-indicator error">{{ errorMessage }}</div>
+  }
+
+  @if (!loading && !errorMessage) {
+    <div class="grid">
+      @for (char of characters; track char.id) {
+        <div class="card" [class.blocked]="isBlocked(char.id)">
+          <button
+            class="block-btn"
+            (click)="blockCharacter(char.id)"
+            [disabled]="isBlocked(char.id)"
+            aria-label="Bloquear tarjeta"
+          >✕</button>
+
+          <img [src]="imageBaseUrl + char.portrait_path" [alt]="char.name" loading="lazy" />
+
+          <div class="card-body">
+            <h2>{{ char.name }}</h2>
+            <p>
+              <span [class]="'status ' + char.status.toLowerCase()"></span>
+              {{ char.status }} - {{ char.gender }}
+            </p>
+            <p class="label">Ocupación:</p>
+            <p class="value">{{ char.occupation }}</p>
+          </div>
+
+          @if (isBlocked(char.id)) {
+            <div class="blocked-overlay">✕</div>
+          }
+        </div>
+      }
+    </div>
+  }
+</div>
