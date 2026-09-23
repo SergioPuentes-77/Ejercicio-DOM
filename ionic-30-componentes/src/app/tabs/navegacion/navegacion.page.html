@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Navegación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h3>17. ion-searchbar</h3>
+  <ion-searchbar placeholder="Buscar..."></ion-searchbar>
+
+  <h3>18. ion-segment</h3>
+  <ion-segment value="uno">
+    <ion-segment-button value="uno"><ion-label>Uno</ion-label></ion-segment-button>
+    <ion-segment-button value="dos"><ion-label>Dos</ion-label></ion-segment-button>
+  </ion-segment>
+
+  <h3>19. ion-accordion</h3>
+  <ion-accordion-group>
+    <ion-accordion value="primero">
+      <ion-item slot="header"><ion-label>Sección 1</ion-label></ion-item>
+      <div class="ion-padding" slot="content">Contenido de la sección 1</div>
+    </ion-accordion>
+    <ion-accordion value="segundo">
+      <ion-item slot="header"><ion-label>Sección 2</ion-label></ion-item>
+      <div class="ion-padding" slot="content">Contenido de la sección 2</div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <h3>20. ion-item (navegación de ejemplo)</h3>
+  <ion-item button detail="true">
+    <ion-label>Ir a otra sección</ion-label>
+  </ion-item>
+</ion-content>
