@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>Calculadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Num1</ion-label>
+      <ion-input
+        type="number"
+        [(ngModel)]="num1"
+        placeholder="Ingrese el primer número"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Op.</ion-label>
+      <ion-select [(ngModel)]="operador" interface="popover">
+        <ion-select-option value="+">+</ion-select-option>
+        <ion-select-option value="-">-</ion-select-option>
+        <ion-select-option value="/">/</ion-select-option>
+        <ion-select-option value="*">*</ion-select-option>
+        <ion-select-option value="^">^</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Num2</ion-label>
+      <ion-input
+        type="number"
+        [(ngModel)]="num2"
+        placeholder="Ingrese el segundo número"
+      ></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" color="dark" class="ion-margin-top" (click)="operar()">
+    Operar
+  </ion-button>
+
+  <div class="resultado">
+    Resultado = {{ resultado }}
+  </div>
+
+  <ion-list *ngIf="historial.length > 0" class="historial">
+    <ion-list-header>
+      <ion-label>Historial</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let item of historial">
+      <ion-label>{{ item }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
