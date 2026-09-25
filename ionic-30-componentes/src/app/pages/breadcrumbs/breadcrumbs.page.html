@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-breadcrumbs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="navigate-outline"></ion-icon>
+    </div>
+    <h1>Migas de pan</h1>
+    <p class="etiqueta-tag">ion-breadcrumbs</p>
+
+    <ion-text class="descripcion">
+      <p>Muestra la ruta de navegación actual dentro de la app, ayudando al usuario a saber en qué sección está.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-breadcrumbs>
+      <ion-breadcrumb>Inicio</ion-breadcrumb>
+      <ion-breadcrumb>Productos</ion-breadcrumb>
+      <ion-breadcrumb>Detalle</ion-breadcrumb>
+    </ion-breadcrumbs>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-toggle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="toggle-outline"></ion-icon>
+    </div>
+    <h1>Interruptor</h1>
+    <p class="etiqueta-tag">ion-toggle</p>
+
+    <ion-text class="descripcion">
+      <p>Funciona como un interruptor de encendido/apagado, útil para activar o desactivar una opción, como el modo oscuro.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-item>
+      <ion-toggle>Modo oscuro</ion-toggle>
+    </ion-item>
+    </div>
+  </div>
+</ion-content>

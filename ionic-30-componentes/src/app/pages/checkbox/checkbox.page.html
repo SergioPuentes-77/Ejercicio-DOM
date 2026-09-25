@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-checkbox</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="checkbox-outline"></ion-icon>
+    </div>
+    <h1>Casilla de verificación</h1>
+    <p class="etiqueta-tag">ion-checkbox</p>
+
+    <ion-text class="descripcion">
+      <p>Permite al usuario marcar una opción como seleccionada o no, útil para aceptar términos o activar preferencias.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-item>
+      <ion-checkbox>Acepto los términos y condiciones</ion-checkbox>
+    </ion-item>
+    </div>
+  </div>
+</ion-content>

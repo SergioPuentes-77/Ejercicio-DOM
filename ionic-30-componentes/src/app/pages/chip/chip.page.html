@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-chip</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="pricetags-outline"></ion-icon>
+    </div>
+    <h1>Chip</h1>
+    <p class="etiqueta-tag">ion-chip</p>
+
+    <ion-text class="descripcion">
+      <p>Representa una entrada, atributo o acción de forma compacta, como filtros o etiquetas seleccionables.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-chip color="warning">Filtro activo</ion-chip>
+    </div>
+  </div>
+</ion-content>

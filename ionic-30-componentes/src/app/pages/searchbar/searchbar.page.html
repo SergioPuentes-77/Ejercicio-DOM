@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-searchbar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="search-outline"></ion-icon>
+    </div>
+    <h1>Barra de búsqueda</h1>
+    <p class="etiqueta-tag">ion-searchbar</p>
+
+    <ion-text class="descripcion">
+      <p>Permite al usuario buscar contenido dentro de la app escribiendo palabras clave.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-searchbar placeholder="Buscar..."></ion-searchbar>
+    </div>
+  </div>
+</ion-content>

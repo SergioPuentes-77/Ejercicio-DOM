@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-spinner</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="sync-outline"></ion-icon>
+    </div>
+    <h1>Spinner</h1>
+    <p class="etiqueta-tag">ion-spinner</p>
+
+    <ion-text class="descripcion">
+      <p>Indica que la aplicación está cargando o procesando algo, mientras el usuario espera.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-spinner color="warning"></ion-spinner>
+    </div>
+  </div>
+</ion-content>

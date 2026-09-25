@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-input</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="create-outline"></ion-icon>
+    </div>
+    <h1>Campo de texto</h1>
+    <p class="etiqueta-tag">ion-input</p>
+
+    <ion-text class="descripcion">
+      <p>Permite al usuario escribir texto corto en una sola línea, como su nombre, correo electrónico o contraseña.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-item>
+      <ion-input label="Nombre" placeholder="Escribe tu nombre"></ion-input>
+    </ion-item>
+    </div>
+  </div>
+</ion-content>

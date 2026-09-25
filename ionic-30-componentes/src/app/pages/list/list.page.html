@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="reorder-four-outline"></ion-icon>
+    </div>
+    <h1>Lista</h1>
+    <p class="etiqueta-tag">ion-list</p>
+
+    <ion-text class="descripcion">
+      <p>Muestra varios elementos organizados en filas, ideal para menús, contactos o listados de datos.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-list>
+      <ion-item><ion-label>Elemento 1</ion-label></ion-item>
+      <ion-item><ion-label>Elemento 2</ion-label></ion-item>
+      <ion-item><ion-label>Elemento 3</ion-label></ion-item>
+    </ion-list>
+    </div>
+  </div>
+</ion-content>

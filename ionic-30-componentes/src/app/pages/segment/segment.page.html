@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-segment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="swap-horizontal-outline"></ion-icon>
+    </div>
+    <h1>Segmento</h1>
+    <p class="etiqueta-tag">ion-segment</p>
+
+    <ion-text class="descripcion">
+      <p>Permite alternar entre varias vistas o categorías relacionadas, como pestañas dentro de una misma pantalla.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-segment value="uno">
+      <ion-segment-button value="uno"><ion-label>Uno</ion-label></ion-segment-button>
+      <ion-segment-button value="dos"><ion-label>Dos</ion-label></ion-segment-button>
+    </ion-segment>
+    </div>
+  </div>
+</ion-content>

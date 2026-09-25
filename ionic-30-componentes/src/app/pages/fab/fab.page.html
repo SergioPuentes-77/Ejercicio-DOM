@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-fab</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="add-circle-outline"></ion-icon>
+    </div>
+    <h1>Botón flotante</h1>
+    <p class="etiqueta-tag">ion-fab</p>
+
+    <ion-text class="descripcion">
+      <p>Es un botón circular flotante para la acción principal de la pantalla, como agregar un nuevo elemento.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <div class="contenedor-fab">
+      <ion-fab vertical="bottom" horizontal="end">
+        <ion-fab-button color="warning">
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </div>
+    </div>
+  </div>
+</ion-content>

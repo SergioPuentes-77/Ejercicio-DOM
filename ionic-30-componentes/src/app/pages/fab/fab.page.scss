@@ -1,0 +1,93 @@
+.fondo-oscuro {
+  --background: #14161a;
+  --color: #f1f1f1;
+}
+
+.ficha {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 32px 20px 60px 20px;
+  text-align: center;
+}
+
+.circulo-icono {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffd534, #ff7a18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+  box-shadow: 0 0 24px rgba(255, 149, 24, 0.35);
+}
+
+.circulo-icono ion-icon {
+  font-size: 40px;
+  color: #14161a;
+}
+
+.ficha h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.etiqueta-tag {
+  font-family: monospace;
+  color: #ff9518;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.descripcion p {
+  color: #c9c9c9;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.separador {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6b6f76;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  margin: 28px 0 16px 0;
+}
+
+.separador::before,
+.separador::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #33363c;
+}
+
+.separador span {
+  padding: 0 12px;
+}
+
+.panel-demo {
+  background: #1e2126;
+  border: 1px solid #33363c;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: left;
+}
+
+.col-demo {
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+}
+
+.col-a { background: #ff7a18; }
+.col-b { background: #2dd4bf; }
+.col-c { background: #a78bfa; }
+
+.contenedor-fab {
+  position: relative;
+  height: 120px;
+}

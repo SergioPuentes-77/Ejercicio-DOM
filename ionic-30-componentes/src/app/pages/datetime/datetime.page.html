@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-datetime</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="calendar-outline"></ion-icon>
+    </div>
+    <h1>Selector de fecha</h1>
+    <p class="etiqueta-tag">ion-datetime</p>
+
+    <ion-text class="descripcion">
+      <p>Muestra un calendario o selector para elegir fechas y horas, como una cita o una reserva.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-datetime presentation="date" color="warning"></ion-datetime>
+    </div>
+  </div>
+</ion-content>

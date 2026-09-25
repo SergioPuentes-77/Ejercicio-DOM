@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar-oscuro">
+    <ion-title>30 Componentes Ionic</ion-title>
+  </ion-toolbar>
+  <ion-toolbar class="toolbar-oscuro">
+    <ion-searchbar
+      [(ngModel)]="textoBusqueda"
+      placeholder="Buscar componente..."
+      color="dark"
+    ></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <ion-list class="fondo-oscuro">
+    @for (item of componentesFiltrados; track item.slug) {
+      <ion-item [routerLink]="'/' + item.slug" button="true" detail="true" class="fila-oscura">
+        <ion-avatar slot="start" class="avatar-item">
+          <ion-icon [name]="item.icono"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>{{ item.titulo }}</h2>
+          <p>{{ item.tag }}</p>
+        </ion-label>
+      </ion-item>
+    }
+  </ion-list>
+</ion-content>

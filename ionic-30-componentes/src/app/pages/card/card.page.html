@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-card</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="albums-outline"></ion-icon>
+    </div>
+    <h1>Tarjeta</h1>
+    <p class="etiqueta-tag">ion-card</p>
+
+    <ion-text class="descripcion">
+      <p>Agrupa información relacionada dentro de un contenedor visual, como una tarjeta de producto o de noticia.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-card>
+      <ion-card-header>
+        <ion-card-title>Título de la tarjeta</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>Contenido de ejemplo dentro de una tarjeta.</ion-card-content>
+    </ion-card>
+    </div>
+  </div>
+</ion-content>

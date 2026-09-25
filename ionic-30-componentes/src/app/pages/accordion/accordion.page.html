@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-accordion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="chevron-down-circle-outline"></ion-icon>
+    </div>
+    <h1>Acordeón</h1>
+    <p class="etiqueta-tag">ion-accordion</p>
+
+    <ion-text class="descripcion">
+      <p>Organiza contenido en secciones que se expanden o contraen, ahorrando espacio en pantalla.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-accordion-group>
+      <ion-accordion value="primero">
+        <ion-item slot="header" color="light"><ion-label>Primera sección</ion-label></ion-item>
+        <div class="ion-padding" slot="content">Contenido de la primera sección.</div>
+      </ion-accordion>
+    </ion-accordion-group>
+    </div>
+  </div>
+</ion-content>

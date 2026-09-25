@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-textarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="reader-outline"></ion-icon>
+    </div>
+    <h1>Área de texto</h1>
+    <p class="etiqueta-tag">ion-textarea</p>
+
+    <ion-text class="descripcion">
+      <p>Permite escribir texto largo de varias líneas, ideal para comentarios, descripciones o mensajes.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-item>
+      <ion-textarea label="Comentario" placeholder="Escribe un comentario largo"></ion-textarea>
+    </ion-item>
+    </div>
+  </div>
+</ion-content>

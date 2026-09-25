@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="browsers-outline"></ion-icon>
+    </div>
+    <h1>Modal</h1>
+    <p class="etiqueta-tag">ion-modal</p>
+
+    <ion-text class="descripcion">
+      <p>Abre una ventana emergente que cubre la pantalla para mostrar contenido adicional, como un formulario o un detalle.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-button id="abrir-modal">Abrir modal</ion-button>
+    <ion-modal trigger="abrir-modal">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar color="warning">
+            <ion-title>Modal de ejemplo</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">Contenido dentro del modal.</ion-content>
+      </ng-template>
+    </ion-modal>
+    </div>
+  </div>
+</ion-content>

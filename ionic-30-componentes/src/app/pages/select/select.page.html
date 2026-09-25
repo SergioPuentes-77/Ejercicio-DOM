@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-select</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="list-outline"></ion-icon>
+    </div>
+    <h1>Selector</h1>
+    <p class="etiqueta-tag">ion-select</p>
+
+    <ion-text class="descripcion">
+      <p>Muestra una lista desplegable para elegir una opción entre varias, ahorrando espacio en pantalla.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-item>
+      <ion-select label="País" placeholder="Selecciona">
+        <ion-select-option value="co">Colombia</ion-select-option>
+        <ion-select-option value="mx">México</ion-select-option>
+        <ion-select-option value="ar">Argentina</ion-select-option>
+      </ion-select>
+    </ion-item>
+    </div>
+  </div>
+</ion-content>

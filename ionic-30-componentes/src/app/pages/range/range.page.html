@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-range</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="options-outline"></ion-icon>
+    </div>
+    <h1>Rango deslizante</h1>
+    <p class="etiqueta-tag">ion-range</p>
+
+    <ion-text class="descripcion">
+      <p>Permite seleccionar un valor numérico deslizando una barra, como el volumen o el brillo de la pantalla.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-item>
+      <ion-range min="0" max="100" color="warning">
+        <ion-label slot="start">0</ion-label>
+        <ion-label slot="end">100</ion-label>
+      </ion-range>
+    </ion-item>
+    </div>
+  </div>
+</ion-content>

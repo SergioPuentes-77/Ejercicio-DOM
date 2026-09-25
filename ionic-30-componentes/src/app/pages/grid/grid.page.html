@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>ion-grid</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-oscuro">
+  <div class="ficha">
+    <div class="circulo-icono">
+      <ion-icon name="grid-outline"></ion-icon>
+    </div>
+    <h1>Cuadrícula</h1>
+    <p class="etiqueta-tag">ion-grid</p>
+
+    <ion-text class="descripcion">
+      <p>Organiza el contenido en filas y columnas, útil para crear diseños responsivos y ordenados.</p>
+    </ion-text>
+
+    <div class="separador">
+      <span>VISTA PREVIA</span>
+    </div>
+
+    <div class="panel-demo">
+      <ion-grid>
+      <ion-row>
+        <ion-col size="4" class="col-demo col-a">Col 1</ion-col>
+        <ion-col size="4" class="col-demo col-b">Col 2</ion-col>
+        <ion-col size="4" class="col-demo col-c">Col 3</ion-col>
+      </ion-row>
+    </ion-grid>
+    </div>
+  </div>
+</ion-content>
