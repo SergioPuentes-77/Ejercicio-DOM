@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Evidencias de Campo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Interruptor de calidad -->
+  <ion-item lines="inset">
+    <ion-icon name="sparkles" slot="start" color="primary"></ion-icon>
+    <ion-label class="ion-text-wrap">
+      <h2>Modo Alta Definición</h2>
+      <p>{{ isHighDef() ? '1280px (Calidad 85%)' : '800px (Calidad 60% - Ahorro)' }}</p>
+    </ion-label>
+    <ion-toggle
+      [checked]="isHighDef()"
+      (ionChange)="toggleQuality($event.detail.checked)">
+    </ion-toggle>
+  </ion-item>
+
+  <!-- Lista de fotos -->
+  @for (photo of photoService.photos(); track photo.filepath; let i = $index) {
+    <ion-card>
+      <ion-img [src]="photo.webPath" [alt]="photo.filepath"></ion-img>
+      <ion-card-content class="ion-text-center">
+        <ion-button fill="clear" color="danger" (click)="photoService.deletePhoto(i)">
+          <ion-icon name="trash" slot="start"></ion-icon>
+          ELIMINAR
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  } @empty {
+    <p class="vacio">
+      No hay capturas registradas. Toque el botón de la cámara para comenzar.
+    </p>
+  }
+
+  <!-- Botón azul de la cámara -->
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="takePhoto()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

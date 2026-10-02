@@ -1,0 +1,7 @@
+{
+  "name": "evidencias-campo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
